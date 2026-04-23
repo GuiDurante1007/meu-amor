@@ -6,8 +6,8 @@
         let tentativas = 1;
 
         //enquanto o chute for diferente do numerosecreto, continua
-        while(chute != numeroSecreto){
-            chute = prompt('escolha um numero entre 1 e 100');
+        while(true){
+            chute = Number(prompt('escolha um numero entre 1 e 100'));
         // se chute for igual ao número secreto
         if (chute == numeroSecreto) {
             break;
