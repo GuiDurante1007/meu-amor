@@ -1,6 +1,6 @@
        alert('Boas vindas ao jogo do número secreto');
         //parseint tira as casas decimais do Math.random
-        let numeroSecreto = parseInt(Math.random() * 100  + 1);
+        let numeroSecreto = Math.floor(Math.random() * 100  + 1);
         console.log(numeroSecreto);
         let chute;
         let tentativas = 1;
