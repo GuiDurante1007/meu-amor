@@ -1,88 +1,65 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
 }
 
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
 
-body::before {
-    background-image: url("img/code.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-}
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 
-.container {
-    width: 1200px;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 24px;
-    border: 1px solid #1875E8;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
-    background-size: 100% 100%;
-    position: relative;
-}
+  padding: 40px;
+  text-align: center;
 
-.container__conteudo {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
+  width: 350px;
 
-.container__informacoes {
-    flex: 1;
-    padding: 20px;
-}
-
-.container__botao {
-    border-radius: 16px;
-    background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    margin-top: 16px;
-}
-
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+  color: #60a5fa;
+  margin-bottom: 10px;
 }
 
-h2,
-p,
+p {
+  color: #e2e8f0;
+  margin-bottom: 20px;
+}
+
 button {
-    font-family: 'Inter', sans-serif;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  transition: 0.3s;
 }
 
-h2 {
-    font-size: 32px;
-    font-weight: 400;
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.dica {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 15px;
 }
