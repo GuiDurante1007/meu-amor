@@ -2,27 +2,42 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Jogo do Número Secreto</title>
+  <title>Número Secreto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
+  <!-- TELA INICIAL -->
+  <div id="inicio" class="tela ativa">
     <h1>🎯 Número Secreto</h1>
-    <p>Tente adivinhar o número entre <strong>1 e 100</strong></p>
+    <p>Adivinhe o número entre 1 e 100</p>
+    <button onclick="iniciar()">Começar</button>
+  </div>
 
-    <button onclick="iniciarJogo()">Jogar</button>
+  <!-- TELA DO JOGO -->
+  <div id="jogo" class="tela">
+    <h2>Tentando descobrir...</h2>
 
-    <p class="dica">💡 Dica: acompanhe no console também</p>
+    <div class="leds">
+      <span class="led"></span>
+      <span class="led"></span>
+      <span class="led"></span>
+      <span class="led"></span>
+      <span class="led"></span>
+    </div>
+
+    <p>Olhe os alerts 👀</p>
+  </div>
+
+  <!-- TELA FINAL -->
+  <div id="fim" class="tela">
+    <h1>🏆 Acertou!</h1>
+    <p id="resultado"></p>
+    <button onclick="location.reload()">Jogar de novo</button>
   </div>
 
   <script src="app.js"></script>
-
-  <script>
-    function iniciarJogo() {
-      location.reload(); // reinicia o jogo (se quiser simplificar)
-    }
-  </script>
+  <script src="ui.js"></script>
 
 </body>
 </html>
